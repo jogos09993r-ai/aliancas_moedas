@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine de Alianças</title>
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Dourado */
+            --dark-color: #2c2c2c;
+            --light-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Grid da Galeria */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: bold;
+            /* Quando tiver as fotos, use a propriedade abaixo e remova as de cima: */
+            /* background-size: cover; background-position: center; */
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.4rem;
+            color: var(--dark-color);
+        }
+
+        .price {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .details {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .details li {
+            margin-bottom: 0.4rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.4rem;
+        }
+
+        /* Tabela de Tamanhos */
+        .tabela-secao {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--dark-color);
+            color: white;
+        }
+
+        /* Informações do Vendedor e Rodapé */
+        .vendedor-info {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .vendedor-info h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💍 amor & Compromisso</h1>
+        <p>A alianças para os momentos mais especiais</p>
+    </header>
+
+    <div class="container">
+
+        <!-- GALERIA DE PRODUTOS -->
+        <section class="galeria">
+            
+            <!-- Modelo 1 -->
+            <div class="card">
+                <!-- Substitua o 'src' abaixo pelo link ou caminho da sua foto -->
+                <img class="card-img" src="1.jpg" alt="Aliança Classic">
+                <div class="card-content">
+                    <h2 class="card-title">(Aliança Classic Dourado)</h2>
+                    <div class="price">R$ 180 <small>/ par</small></div>
+                    <ul class="details">
+                        <li><strong>Largura:</strong> 4mm</li>
+                        
+                        <li><strong>Tamanhos:</strong> 12 ao 28</li>
+                        <li><strong>Material:</strong> Dourado Amarelo moedas</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+
+        </section>
+
+        <!-- TABELA DE MEDIDAS -->
+        <section class="tabela-secao">
+            <h2>📏 Guia Rápido de Tamanhos</h2>
+            <p>Meça a circunferência do seu dedo com uma fita e compare abaixo:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medida do Dedo (cm)</th>
+                        <th>Tamanho da Aliança</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>5,2 cm</td><td>Tamanho 12</td></tr>
+                    <tr><td>5,5 cm</td><td>Tamanho 15</td></tr>
+                    <tr><td>5,8 cm</td><td>Tamanho 18</td></tr>
+                    <tr><td>6,2 cm</td><td>Tamanho 22</td></tr>
+                    <tr><td>6,5 cm</td><td>Tamanho 25</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- INFORMAÇÕES DO VENDEDOR -->
+        <section class="vendedor-info">
+            <h3>👤 Informações de Compra</h3>
+            <p><strong>Vendedor:</strong> (salomao Alianças)</p>
+            <p><strong>Localização:</strong> (MG.Carmo do rio claro)</p>
+            <p><strong>Garantia:</strong> Vitalícia do metal e 1 ano contra defeitos de fabricação.</p>
+            
+            <!-- Substitua o link abaixo pelo link do seu WhatsApp -->
+            <a href="https://wa.me/553599354305?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20as%20alian%C3%A7as" class="btn-whatsapp" target="_blank">
+                💬 Chamar no WhatsApp / Fazer Pedido
+            </a>
+        </section>
+
+    </div>
+
+</body>
+</html>
